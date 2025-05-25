@@ -6,7 +6,7 @@ This repository contains a couple of scripts that extend the default ScrollRect 
 - Forces the MovementType to "Elastic" on iOS and Android, and "Clamped" otherwise.
 - Disabling dragging input, scroll wheel input, both, or neither.
 
-Feel free to use or share however you like. 
+Feel free to use or share however you would like. 
 
 Watch the full tutorial here: https://www.youtube.com/@LoganDKemper
 
