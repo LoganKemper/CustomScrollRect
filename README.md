@@ -8,7 +8,7 @@ This repository contains a couple of scripts that extend the default ScrollRect 
 
 Feel free to use or share however you would like. 
 
-Watch the full tutorial here: https://www.youtube.com/@LoganDKemper
+Watch the full tutorial here: https://youtu.be/Pm3oonzb5K8
 
 ## How to Use
 - Import the scripts into a Unity project. Last tested in Unity 2022.3.
