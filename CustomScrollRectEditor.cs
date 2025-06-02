@@ -12,6 +12,7 @@ public class CustomScrollRectEditor : ScrollRectEditor
     protected override void OnEnable()
     {
         base.OnEnable();
+        
         _preventScrolling = serializedObject.FindProperty(nameof(_preventScrolling));
         _preventDragging = serializedObject.FindProperty(nameof(_preventDragging));
     }
