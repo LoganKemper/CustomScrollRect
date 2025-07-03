@@ -4,8 +4,8 @@ using UnityEngine.EventSystems;
 
 public class CustomScrollRect : ScrollRect
 {
-    [SerializeField] private bool preventScrolling;
-    [SerializeField] private bool preventDragging;
+    [SerializeField] private bool _preventScrolling;
+    [SerializeField] private bool _preventDragging;
 
     private int _activePointerId = -1;
 
@@ -22,7 +22,7 @@ public class CustomScrollRect : ScrollRect
     public override void OnScroll(PointerEventData data)
     {
         // Only scroll if scrolling is allowed
-        if (!preventScrolling)
+        if (!_preventScrolling)
         {
             base.OnScroll(data);
 
@@ -41,7 +41,7 @@ public class CustomScrollRect : ScrollRect
     public override void OnBeginDrag(PointerEventData eventData)
     {
         // Only let the active pointer drag
-        if (!preventDragging && eventData.pointerId == _activePointerId)
+        if (!_preventDragging && eventData.pointerId == _activePointerId)
         {
             base.OnBeginDrag(eventData);
         }
